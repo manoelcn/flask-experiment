@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minha Página de Teste</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
     <header>
         <h1>Bem-vindo ao Flask!</h1>
+        <a href="{{ url_for('about') }}" class="btn-link">Sobre</a>
     </header>
     <main>
         <p>Essa é uma página de teste :)</p>
-        <img src="{{ url_for('static', filename='example.gif') }}" alt="the office"  width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen>
+        <img src="{{ url_for('static', filename='img/theoffice.gif') }}" alt="the office"  width="400" height="400" frameBorder="0" class="giphy-embed" allowFullScreen>
     </main>
     <footer>
         <p>© 2024 Minha Aplicação Flask</p>
